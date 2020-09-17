@@ -38,7 +38,7 @@ bot.on('message', msg => {
         mman.hi(msg);
       }
       else if (run == "dummy") {
-        mman.readfile("./Dummy.txt", function (contents) {
+        mman.readfile("./dummy.txt", function (contents) {
           msg.channel.send("Dummy text to check file reading\n\n" + contents)
         });
       }
