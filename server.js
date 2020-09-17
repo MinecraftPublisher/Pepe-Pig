@@ -22,18 +22,14 @@ bot.on('message', msg => {
         const exampleEmbed = new Discord.MessageEmbed()
           .setColor('#0099ff')
           .setTitle('Help')
-          .setDescription('Lemme explain:\nMy prefix is now, so saying now ping will ping.\n\nCommands:\nping: pong!\nhelp: shows help...? i guess...?')
+          .setDescription('Lemme explain:\nMy prefix is now, so saying now ping will ping.\n\nCommands:')
           .setThumbnail('https://i.imgur.com/wSTFkRM.png')
           .addFields(
-            { name: 'Regular field title', value: 'Some value here' },
             { name: '\u200B', value: '\u200B' },
-            { name: 'Inline field title', value: 'Some value here', inline: true },
-            { name: 'Inline field title', value: 'Some value here', inline: true },
+            { name: 'ping', value: 'Pong!', inline: true },
+            { name: 'help', value: 'shows help, i guess...?', inline: true },
           )
-          .addField('Inline field title', 'Some value here', true)
-          .setImage('https://i.imgur.com/wSTFkRM.png')
-          .setTimestamp()
-          .setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
+          .setTimestamp();
 
         msg.channel.send(exampleEmbed);
       }
