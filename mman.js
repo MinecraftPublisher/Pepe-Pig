@@ -8,7 +8,13 @@ function readfile(filename,callback){
         return callback(contents);
     });
 }
+function writefile(filename,contents,callback){
+    fs.writeFile(filename,contents,function(err){
+        return callback(err);
+    });
+}
 module.exports = {
     hi,
-    readfile
+    readfile,
+    writefile
 };
