@@ -23,7 +23,6 @@ bot.on('message', msg => {
           .setColor('#0099ff')
           .setTitle('Help')
           .setDescription('Lemme explain:\nMy prefix is now, so saying now ping will ping.\n\nCommands:')
-          .setThumbnail('https://i.imgur.com/wSTFkRM.png')
           .addFields(
             { name: '\u200B', value: '\u200B' },
             { name: 'ping', value: 'Pong!', inline: true },
