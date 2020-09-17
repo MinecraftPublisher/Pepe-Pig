@@ -26,9 +26,9 @@ bot.on('message', msg => {
           .setDescription('Lemme explain:\nMy prefix is now, so saying now ping will ping.\n\nCommands:')
           .addFields(
             { name: '\u200B', value: '\u200B' },
-            { name: 'ping', value: 'Pong!', inline: true },
-            { name: 'hi', value: 'say hi to me, be nice!', inline: true },
-            { name: 'help', value: 'shows help, i guess...?', inline: true },
+            { name: '         ping', value: 'Pong!', inline: true },
+            { name: '         hi', value: 'say hi to me, be nice!', inline: true },
+            { name: '         help', value: 'shows help, i guess...?', inline: true },
           )
           .setTimestamp();
 
@@ -37,9 +37,9 @@ bot.on('message', msg => {
       else if (run == "hi") {
         mman.hi(msg);
       }
-      else if (run == "proc") {
-        mman.readfile("./Procfile", function (contents) {
-          msg.channel.send("The Procfile:\n\n" + contents)
+      else if (run == "dummy") {
+        mman.readfile("./Dummy.txt", function (contents) {
+          msg.channel.send("Dummy text to check file reading\n\n" + contents)
         });
       }
       else {
