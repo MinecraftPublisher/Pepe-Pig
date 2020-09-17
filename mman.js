@@ -1,6 +1,7 @@
-function mman() {
-    function hi(message){
-        message.reply("hello");
-    }
+
+function hi(message) {
+    message.reply("hello");
 }
-module.exports = mman;
+module.exports = {
+    hi
+};
