@@ -1,6 +1,6 @@
 
 function hi(message) {
-    message.reply("hello");
+    message.channel.send("Hello!");
 }
 module.exports = {
     hi
