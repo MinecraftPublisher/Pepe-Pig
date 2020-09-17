@@ -8,7 +8,13 @@ bot.on('ready', () => {
   console.info(`Logged in as ${bot.user.tag}!`);
 });
 bot.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('pong');
+  if(msg.author.bot){
+    return;}
+  else{
+    if(msg.content.split(" ")[0]=="now"){
+    }
+    else{
+      console.log("regretted");
+    }
   }
 });
