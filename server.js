@@ -8,10 +8,14 @@ bot.on('ready', () => {
   console.info(`Logged in as ${bot.user.tag}!`);
 });
 bot.on('message', msg => {
+  var mes = msg.content.split(" ");
   if(msg.author.bot){
     return;}
   else{
-    if(msg.content.split(" ")[0]=="now"){
+    if(mes[0]=="now"){
+      if(mes[1]=="ping"){
+        msg.channel.send("NOPE");
+      }
     }
     else{
       console.log("regretted");
