@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-var mman = require("./mman.js");
-var manager = new mman();
+let mman = require("./mman.js");
 
 const TOKEN = process.env.TOKEN;
 
@@ -36,7 +35,7 @@ bot.on('message', msg => {
         msg.channel.send(exampleEmbed);
       }
       else if (run == "hi") {
-        manager.hi(msg);
+        mman.hi(msg);
       }
       else {
         msg.channel.send("ummm...");
