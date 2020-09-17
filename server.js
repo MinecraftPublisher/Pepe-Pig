@@ -16,6 +16,9 @@ bot.on('message', msg => {
       if(mes[1]=="ping"){
         msg.channel.send("NOPE");
       }
+      else{
+        msg.channel.send("ummm...");
+      }
     }
     else{
       console.log("regretted");
