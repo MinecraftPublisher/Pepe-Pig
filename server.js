@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
+var mman = require("./mman.js");
+var manager = new mman();
 
 const TOKEN = process.env.TOKEN;
 
@@ -26,11 +28,15 @@ bot.on('message', msg => {
           .addFields(
             { name: '\u200B', value: '\u200B' },
             { name: 'ping', value: 'Pong!', inline: true },
+            { name: 'hi', value: 'say hi to me, be nice!', inline: true },
             { name: 'help', value: 'shows help, i guess...?', inline: true },
           )
           .setTimestamp();
 
         msg.channel.send(exampleEmbed);
+      }
+      else if (run == "hi") {
+        manager.hi(msg);
       }
       else {
         msg.channel.send("ummm...");
