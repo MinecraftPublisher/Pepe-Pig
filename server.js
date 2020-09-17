@@ -38,7 +38,7 @@ bot.on('message', msg => {
         mman.hi(msg);
       }
       else if (run == "proc") {
-        mman.readfile("Procfile", function (contents) {
+        mman.readfile("./Procfile", function (contents) {
           msg.channel.send("The Procfile:\n\n" + contents)
         });
       }
