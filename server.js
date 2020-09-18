@@ -45,6 +45,9 @@ bot.on('message', msg => {
         let bal = require("./piggy/bal.js");
         bal.bal(msg);
       }
+      else if(run == "crash"){
+        bruh.crashme();
+      }
       else {
         msg.channel.send("ummm...");
       }
