@@ -1,6 +1,7 @@
 var msg = null;
 var amounts = [0, 0, 0, 245, 387];
 var stuff = ["**Yourself** : Nope", "**John F Cenedy** : Nah, screw it", "**Pepe Pig** : HAHAHA no.", "**Shrek** : Get dis 245 coinz budd", "**Yourself** : Get this 387 coinz u poor thing"];
+var fs = require("fs");
 
 function random(low, high) {
     return Math.floor(Math.random() * (high - low) + low)
