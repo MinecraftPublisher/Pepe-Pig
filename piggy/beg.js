@@ -21,3 +21,6 @@ function begged() {
         }
     });
 }
+module.exports = [
+    beg
+];

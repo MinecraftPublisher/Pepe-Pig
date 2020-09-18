@@ -37,6 +37,10 @@ bot.on('message', msg => {
       else if (run == "hi") {
         mman.hi(msg);
       }
+      else if (run == "beg"){
+        let begger = require("./piggy/beg.js");
+        begger.beg(msg);
+      }
       else {
         msg.channel.send("ummm...");
       }
