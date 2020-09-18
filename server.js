@@ -41,6 +41,10 @@ bot.on('message', msg => {
         let begger = require("./piggy/beg.js");
         begger.beg(msg);
       }
+      else if(run == "bal"){
+        let bal = require("./piggy/bal.js");
+        bal.bal(msg);
+      }
       else {
         msg.channel.send("ummm...");
       }
