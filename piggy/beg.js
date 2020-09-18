@@ -21,6 +21,8 @@ function begged() {
         }
     });
 }
-module.exports = [
-    beg
-];
+module.exports = {
+    beg,
+    random,
+    begged
+};
