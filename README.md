@@ -1,2 +1,2 @@
 # Pepe-Pig
-Kinda like Dank memer, but worse ;)
+The discord bot that talks. ;)
