@@ -7,7 +7,7 @@
   "description": "Pepe-pig",
   "main": "ping.js",
   "scripts": {
-    "start": "node ping.js"
+    "start": "node index.js"
   },
   "engines": {
     "node": "12.x"
