@@ -8,6 +8,8 @@
   "main": "ping.js",
   "scripts": {
     "start": "node index.js"
+  },"dependencies": {
+    "axios": "^0.20.0"
   },
   "engines": {
     "node": "12.x"
