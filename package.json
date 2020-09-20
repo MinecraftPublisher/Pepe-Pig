@@ -2,18 +2,12 @@
   "//1": "describes your app and its dependencies",
   "//2": "https://docs.npmjs.com/files/package.json",
   "//3": "updating this file will download and update your packages",
-  "name": "hello-express",
+  "name": "pepe-pig",
   "version": "0.0.1",
-  "description": "Pepe-pig's heroku page",
-  "main": "server.js",
+  "description": "Pepe-pig",
+  "main": "ping.js",
   "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "discord.js": "^12.3.1",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "mysql": "^2.18.1"
+    "start": "node ping.js"
   },
   "engines": {
     "node": "12.x"
