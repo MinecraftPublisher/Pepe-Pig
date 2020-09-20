@@ -1,8 +1,4 @@
-// server.js
-// where your node app starts
-
-// we've started you off with Express (https://expressjs.com/)
-// but feel free to use whatever libraries or frameworks you'd like through `package.json`.
+var serverPort = 8080;
 const express = require("express");
 const app = express();
 
@@ -29,6 +25,6 @@ app.get("/dreams", (request, response) => {
 });
 
 // listen for requests :)
-const listener = app.listen(process.env.PORT, () => {
+const listener = app.listen(process.env.PORT || serverPort, () => {
   console.log("Your app is listening on port " + listener.address().port);
 });
