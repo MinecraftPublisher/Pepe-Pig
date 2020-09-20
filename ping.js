@@ -12,5 +12,5 @@ axios.post('https://pepepig.glitch.me/', data)
     }).catch((err) => {
         console.error(err);
     });
-  get();
+  setTimeout(get, 5000);
 }
