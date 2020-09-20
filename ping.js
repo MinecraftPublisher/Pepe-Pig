@@ -3,5 +3,5 @@ get();
 function get(){
   console.log("exec");
   https.get("https://pepepig.glitch.me/");
-  setTimeout(get, 1000);
+  setTimeout(get, 5000);
 }
