@@ -12,7 +12,7 @@ axios.post('https://pepepig.glitch.me/', data)
     }).catch((err) => {
         console.error(err);
     });
-  axios.post('https://Dynamo.dragondev15.repl.run', data)
+  axios.post('https://officialdynamobot.glitch.me', data)
     .then((res) => {
         console.log(`Status: ${res.status}`);
         console.log('Body: ', res.data);
